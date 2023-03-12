@@ -14,6 +14,8 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-rnapp-rnappTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-rnapp-rnappTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		ABC6B5FB29BE0F240019970B /* RTNMyDownloader.mm in Sources */ = {isa = PBXBuildFile; fileRef = ABC6B5FA29BE0F240019970B /* RTNMyDownloader.mm */; };
+		ABC6B5FD29BE10B30019970B /* MyDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC6B5FC29BE10B30019970B /* MyDownloader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,9 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = rnapp/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-rnapp-rnappTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnapp-rnappTests.release.xcconfig"; path = "Target Support Files/Pods-rnapp-rnappTests/Pods-rnapp-rnappTests.release.xcconfig"; sourceTree = "<group>"; };
 		AB1ADCFC29A36DE60089124F /* rnapp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "rnapp-Bridging-Header.h"; sourceTree = "<group>"; };
+		ABC6B5F929BE0EE40019970B /* RTNMyDownloader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTNMyDownloader.h; sourceTree = "<group>"; };
+		ABC6B5FA29BE0F240019970B /* RTNMyDownloader.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RTNMyDownloader.mm; sourceTree = "<group>"; };
+		ABC6B5FC29BE10B30019970B /* MyDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDownloader.swift; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -94,6 +99,9 @@
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 				AB1ADCFC29A36DE60089124F /* rnapp-Bridging-Header.h */,
+				ABC6B5F929BE0EE40019970B /* RTNMyDownloader.h */,
+				ABC6B5FA29BE0F240019970B /* RTNMyDownloader.mm */,
+				ABC6B5FC29BE10B30019970B /* MyDownloader.swift */,
 			);
 			name = rnapp;
 			sourceTree = "<group>";
@@ -414,7 +422,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABC6B5FB29BE0F240019970B /* RTNMyDownloader.mm in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
+				ABC6B5FD29BE10B30019970B /* MyDownloader.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,6 +444,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-rnapp-rnappTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -461,6 +472,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-rnapp-rnappTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = rnappTests/Info.plist;
